@@ -1,0 +1,27 @@
+An application needs to manage an internal registry of IP addresses and hostnames. Each hostname may have several associated IP addresses (and always at least one).
+Each IP address may only be associated with one hostname.
+
+For example:
+
+www.example.com has IP addresses 10.1.1.1, 10.1.2.1, 10.1.3.1
+
+mail.example.com has IP addresses 10.1.1.2, 10.1.1.3, 10.1.1.4
+
+Hence IP address 10.1.1.1 has hostname 'www.example.com' and IP address 10.1.1.2 has hostname 'mail.example.com'
+
+Design and implement an OO perl api to manage this data in memory (i.e. a hostname/ipaddress registry).
+
+Your code should allow the application to:
+
+- register a new hostname with it's ip address(es)
+
+- get the ip address(es) for a hostname
+- get the hostname for a IP address
+- modify the list of ip addresses a hostname
+
+- list all hostnames
+- list all ip addresses
+
+[If too easy, add this as well:
+- save the registry to disk (in any format you choose)
+- load the registry from disk]
